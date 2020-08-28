@@ -1,4 +1,4 @@
-[My Website](www.mertkaya.me)
+[My Website](mertkaya.me)
 
 [Github page](https://github.com/mertkaya13/)
 
