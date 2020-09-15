@@ -1,0 +1,13 @@
+.button-class{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.button{
+    color: cornflowerblue;
+    background-color: darkgray;
+    box-shadow: darkgrey 2px 2px;
+}

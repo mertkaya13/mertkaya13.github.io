@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="button-class">
+    <button id="button" class="button" onclick="changeColor()" >Click me</button>
+    </div>
+    <script>
+        function changeColor(){
+            num1 = getRandomInt(255);
+            num2 = getRandomInt(255);
+            num3 = getRandomInt(255);
+            document.body.style.backgroundColor = "rgb("+num1+","+num2+","+num3+")";
+            button = document.getElementById("button");
+            button.style.color = "rgb("+num1+","+num2+","+num3+")";
+        }
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+    </script>
+</body>
+</html>
