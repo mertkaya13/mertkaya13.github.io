@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Colors</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="body">
-    <div class="button-class">
-    <button id="button" class="button" onclick="changeColor()" >Click me</button>
+<body  id="google_translate_element" onload="googleTranslateElementInit()" style="background-color: cadetblue;" >
+    <div class="colorcode">
+        <label for="colorcode" id="colorcode">Color Code</label>
+        <br>
+        <label for="rgblabel" id="rgblabel">RGB : </label>
+        <br>
+        <label for="hexlabel" id="hexlabel">HEX : </label>
     </div>
+    
+    <div class="button-class">
+    <label for="quote" id="quote" class="quote">Random Quote Generator</label> <br>
+    <br>
+    </div>
+
+    <div class="button-class-2">
+        <button id="button" class="button" onclick="changeColor()" >Random Quote and Color</button>
+        <br>
+    </div>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         function changeColor(){
             num1 = getRandomInt(255);
@@ -18,10 +35,56 @@
             document.body.style.backgroundColor = "rgb("+num1+","+num2+","+num3+")";
             button = document.getElementById("button");
             button.style.color = "rgb("+num1+","+num2+","+num3+")";
+            document.getElementById("rgblabel").innerHTML = "RGB: "+num1+","+num2+","+num3;
+            document.getElementById("hexlabel").innerHTML = "HEX: "+fullColorHex(num1,num2,num3);
+            randomQuote();
+        }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
         function getRandomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max));
+            num =  Math.floor(Math.random() * Math.floor(max));
+            if(num < 80){
+                num = 80;
+            }
+            return num
         }
+        function randomQuote() {
+            $.ajax({
+            url: "https://api.forismatic.com/api/1.0/?",
+            dataType: "jsonp",
+            data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
+            success: function (quoteData) {
+
+                if (quoteData.quoteAuthor === '') {
+                    quoteData.quoteAuthor = 'Unknown';
+                };
+                
+                document.getElementById("quote").innerHTML = ""+quoteData.quoteText + " -     <em>" + quoteData.quoteAuthor + "</em>";
+                //$("#tweetMe").attr("href", "https://twitter.com/home/?status=" + quoteData.quoteText + ' - ' + quoteData.quoteAuthor);
+            }
+        });
+        }
+
+        var rgbToHex = function (rgb) { 
+            var hex = Number(rgb).toString(16);
+            if (hex.length < 2) {
+                hex = "0" + hex;
+            }
+            return hex;
+        };
+
+        var fullColorHex = function(r,g,b) {   
+            var red = rgbToHex(r);
+            var green = rgbToHex(g);
+            var blue = rgbToHex(b);
+            return red+green+blue;
+        };
+
     </script>
+    <footer class="footer">
+            <p class="copyright">Copyright 2020 - Mert KAYA</p>
+    </footer>
 </body>
+
 </html>

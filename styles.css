@@ -1,20 +1,48 @@
+body{
+    overflow: hidden;
+}
+
 .button-class{
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.button-class-2{
+    margin: 0;
+    position: absolute;
+    top: 60%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.colorcode{
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    color-adjust: inherit;
+}
+.quote{
+    font-family: fantasy;
+}
 .button {
     position: relative;
-    background-color: #4d4d4d;
+    background-color: #4d4d4d77;
     border: none;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: fantasy;
+    font-style: italic;
     color: #FFFFFF;
     padding: 0px;
-    width: 120px;
-    height: 40px;
+    width: 185px;
+    height: 60px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -40,4 +68,14 @@
     margin: 0;
     opacity: 1;
     transition: 0s
+  }
+  .footer{
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 51%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
   }
