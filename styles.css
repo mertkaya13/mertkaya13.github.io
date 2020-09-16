@@ -29,10 +29,6 @@ body{
     transform: translate(-50%, -50%);
     font-family: fantasy;
     color-adjust: inherit;
-    border: dashed;
-    border-color: grey;
-    border-collapse: inherit;
-    border-spacing: 10px;
 
 }
 .quote{
