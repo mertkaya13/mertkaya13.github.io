@@ -1,4 +1,6 @@
-
+body{
+    overflow: hidden;
+}
 
 .button-class{
     margin: 0;
@@ -8,6 +10,9 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 25px;
+    max-width: 70%;
+    max-height: 60%;
+    
 
 }
 .button-class-2{
