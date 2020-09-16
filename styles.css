@@ -1,7 +1,7 @@
 body{
     overflow: hidden;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 .button-class{
     margin: 0;
     position: absolute;
@@ -9,7 +9,7 @@ body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 8vw;
+    font-size: 50px;
     max-width: 70%;
     max-height: 60%;
     
