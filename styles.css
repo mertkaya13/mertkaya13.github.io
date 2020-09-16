@@ -1,54 +1,81 @@
 body{
     overflow: hidden;
 }
+.google_translate_element{
+    width: 5px;
+}
 @media screen and (max-width: 1200px) {
-.button-class{
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 1250px;
-    max-width: 70%;
-    max-height: 60%;
+    .button-class{
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 4.3vw;
+        max-width: 70%;
+        max-height: 60%;
+        letter-spacing: 0.1vw;
     
-
+    }
+    .button-class-2{
+        margin: 0;
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .colorcode{
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 63%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        color-adjust: inherit;
+        font-size: 4vw;
+        line-height: 7vw;
+        
+    }
 }
-}
 
-.button-class{
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 2.3vw;
-    max-width: 70%;
-    max-height: 60%;
+@media screen and (min-width: 1200px) {
+    .button-class{
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 54%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 2.2vw;
+        max-width: 70%;
+        max-height: 60%;
+        
     
-
+    }
+    .button-class-2{
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 51%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .colorcode{
+        margin: 0;
+        position: absolute;
+        top: 3%;
+        left: 90%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+        color-adjust: inherit;
+        font-size: 1.2vw;
+    }
 }
-.button-class-2{
-    margin: 0;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.colorcode{
-    margin: 0;
-    position: absolute;
-    top: 7%;
-    left: 90%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: fantasy;
-    color-adjust: inherit;
-
-}
+    
 .quote{
     font-family: fantasy;
     font-size-adjust: inherit;
@@ -63,13 +90,14 @@ body{
     font-style: italic;
     color: #FFFFFF;
     padding: 0px;
-    width: 185px;
+    width: 205px;
     height: 60px;
     text-align: center;
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 80%;
   }
   
   .button:after {
@@ -82,14 +110,16 @@ body{
     margin-left: -20px !important;
     margin-top: -120%;
     opacity: 0;
-    transition: all 0.8s
+    transition: all 0.8s;
+    border-radius: 80%;
   }
   
   .button:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
-    transition: 0s
+    transition: 0s;
+    border-radius: 80%;
   }
   .footer{
     margin: 0;
