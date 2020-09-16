@@ -17,7 +17,7 @@
     </div>
     
     <div class="button-class">
-    <label for="quote" id="quote" class="quote">Random Quote Generator</label> <br>
+        <label for="quote" id="quote" class="quote" style="width: 400px;">Random Quote Generator</label> <br>
     <br>
     </div>
 
@@ -61,7 +61,7 @@
                     quoteData.quoteAuthor = 'Unknown';
                 };
                 
-                document.getElementById("quote").innerHTML = ""+quoteData.quoteText + " -     <em>" + quoteData.quoteAuthor + "</em>";
+                document.getElementById("quote").innerHTML = ""+quoteData.quoteText + " <br>-     <em>" + quoteData.quoteAuthor + "</em>";
                 //$("#tweetMe").attr("href", "https://twitter.com/home/?status=" + quoteData.quoteText + ' - ' + quoteData.quoteAuthor);
             }
         });
