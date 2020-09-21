@@ -95,6 +95,7 @@ body{
     overflow: hidden;
     cursor: pointer;
     border-radius: 80%;
+    outline: none;
   }
   
   .button:after {
