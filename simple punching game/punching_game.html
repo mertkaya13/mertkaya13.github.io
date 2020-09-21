@@ -10,8 +10,7 @@
 <body>
     <div id="vue-app">
         <!-- bag image -->
-        <div id="bag" v-bind:class="{burst: ended}" v-on:click="punch">
-            
+        <div id="bag" v-bind:class="{burst: ended}" v-on:click="punch" v-on:mousemove="updatexy" >
         </div>
 
         <!-- bag health --> 
