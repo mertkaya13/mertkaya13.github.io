@@ -1,5 +1,7 @@
 body{
     overflow: hidden;
+    box-sizing: border-box;
+    margin: auto auto;
 }
 @media screen and (max-width: 1200px) {
     .button-class{
